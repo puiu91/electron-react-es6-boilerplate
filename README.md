@@ -7,8 +7,8 @@ This is a boilerplate for myself with two goals in mind:
 ## Commands
 
 ```bash
-git clone <repo url here> <folder-name>
-npm cd <folder-name>
+git clone https://github.com/puiu91/electron-react-es6-boilerplate.git
+cd electron-react-es6-boilerplate
 npm i
 npm run build
 npm run start
