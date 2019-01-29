@@ -10,9 +10,6 @@
 <body>
     <!-- React hooks and renders into this div -->
     <div id="root"></div>
-    <!-- HtmlWebpackPlugin automatically includes all assets (e.g., bundle.js, main.css) with correct HTML tags -->
-    <% for (var css in htmlWebpackPlugin.files.css) { %><link href="<%= htmlWebpackPlugin.files.css[css] %>" rel="stylesheet"><% } %>
-    <% for (var chunk in htmlWebpackPlugin.files.chunks) { %><script src="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>"></script><% } %>
 
     <!-- Fonts and external assets -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
