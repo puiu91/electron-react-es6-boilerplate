@@ -1,12 +1,21 @@
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
   entry: "./src/app/index.js",
   output: {
-    filename: "bundle.js",
-    path: path.resolve(__dirname, "..", "..", "build")
+    filename: "[name].bundle.js",
+    path: path.resolve(__dirname, "../../build")
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      inject: true,
+      template: path.resolve(__dirname, "../../public/index.ejs"),
+      title: "electron app quick start",
+      hash: true // suffixes asset filenames with a hash like `styles.css?564201b6c8cc6c0a1d8e` for cache busting
+    })
+  ],
   module: {
     rules: [
       {
