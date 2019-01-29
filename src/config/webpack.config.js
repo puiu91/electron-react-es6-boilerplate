@@ -37,6 +37,13 @@ module.exports = {
           },
           "css-loader"
         ]
+      },
+      {
+        test: /\.(js|jsx)$/,
+        include: path.resolve("src"),
+        use: {
+          loader: "babel-loader"
+        }
       }
     ]
   }

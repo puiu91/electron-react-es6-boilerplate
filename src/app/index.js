@@ -1,5 +1,8 @@
 import _ from "lodash";
 import "./style.css";
+import Add from "./Add";
+
+const concreteAdd = new Add(2,3);
 
 function component() {
   const element = document.createElement("div");
