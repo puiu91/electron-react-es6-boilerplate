@@ -1,15 +1,22 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
+
+const rootPath = path.resolve(__dirname, "..", "..");
+const buildPath = path.resolve(__dirname, "../../build");
 
 module.exports = {
   mode: "development",
   entry: "./src/app/index.js",
   output: {
     filename: "[name].bundle.js",
-    path: path.resolve(__dirname, "../../build")
+    path: buildPath
   },
   plugins: [
+    new CleanWebpackPlugin(["build/*.*"], {
+      root: rootPath
+    }),
     new MiniCssExtractPlugin({
       filename: "./css/styles.css"
     }),
