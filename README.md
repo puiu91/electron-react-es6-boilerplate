@@ -28,7 +28,7 @@ Also note that `./build/index.html` is also generated through webpack at build t
 
 ### webpack-dev-server
 
-Currently, the application is able to both through electron and in the browser via `npm run buildInBrowser`. Think of it like this - both electron and the browser server as an execution environment for application ode. The difference is that electron has both a built in NodeJS and Chromium environment. 
+Currently, the application is able to run both through electron and browser via `npm run buildInBrowser`. Think of it like this - both electron and the browser server as an execution environment for application ode. The difference is that electron has both a built in NodeJS and Chromium environment. 
 
 This means that it is possible to run the application in development either in the browser or through electron. The only limitation to this is when using a NodeJS library that cannot be executed in the browser, such as a SQL driver like `sqlite` which runs in NodeJS environments but not in the browser. In other words, libraries which require access to the NodeJS runtime environment will break this dual development capability in both browser and electron.
 
