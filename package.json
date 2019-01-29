@@ -1,7 +1,7 @@
 {
   "name": "electron-react-es6-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "a boilerplate for electron running react in es6",
   "main": "./src/main.js",
   "scripts": {
     "start": "electron .",
