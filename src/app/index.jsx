@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import ApplicationContainer from "./container/ApplicationContainer.jsx";
+import ApplicationContainer from "./container/ApplicationContainer";
 import _ from "lodash";
 
 ReactDOM.render(

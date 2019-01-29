@@ -41,6 +41,9 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         include: path.resolve("src"),
+        resolve: {
+          extensions: [".js", ".jsx"] // allows js and jsx file import without specifying the extension
+        },
         use: {
           loader: "babel-loader"
         }
