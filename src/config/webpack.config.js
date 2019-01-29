@@ -13,6 +13,7 @@ module.exports = {
     filename: "[name].bundle.js",
     path: buildPath
   },
+  devtool: "source-map", // shows the file and line number of an error
   plugins: [
     new CleanWebpackPlugin(["build"], {
       root: rootPath
